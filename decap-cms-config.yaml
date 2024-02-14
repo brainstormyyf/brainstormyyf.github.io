@@ -1,0 +1,576 @@
+collections:
+- create: true
+  fields:
+  - i18n: true
+    label: Title
+    name: title
+    widget: string
+  - default: true
+    i18n: true
+    label: Draft
+    name: draft
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Pinned
+    name: pinned
+    required: false
+    widget: boolean
+  - i18n: true
+    label: Date
+    name: date
+    picker_utc: true
+    widget: datetime
+  - i18n: true
+    label: Description
+    name: description
+    widget: text
+  - collapsed: true
+    field:
+      label: Image
+      name: image
+      widget: image
+    i18n: true
+    label: Images
+    minimize_collapsed: true
+    name: images
+    required: false
+    summary: '{{fields.image}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Alias
+      name: alias
+      widget: string
+    i18n: true
+    label: Aliases
+    minimize_collapsed: true
+    name: aliases
+    required: false
+    summary: '{{fields.alias}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Author
+      name: author
+      widget: string
+    i18n: true
+    label: Authors
+    minimize_collapsed: true
+    name: authors
+    required: false
+    summary: '{{fields.author}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Series
+      name: series
+      widget: string
+    i18n: true
+    label: Series
+    minimize_collapsed: true
+    name: series
+    required: false
+    summary: '{{fields.series}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Category
+      name: category
+      widget: string
+    i18n: true
+    label: Categories
+    minimize_collapsed: true
+    name: categories
+    required: false
+    summary: '{{fields.category}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Tag
+      name: tag
+      widget: string
+    i18n: true
+    label: Tags
+    minimize_collapsed: true
+    name: tags
+    required: false
+    summary: '{{fields.tag}}'
+    widget: list
+  - i18n: true
+    label: Body
+    name: body
+    widget: markdown
+  folder: content/news
+  i18n: true
+  label: 新闻
+  label_singular: 新闻
+  meta:
+    path:
+      index_file: index
+      label: Path
+      widget: string
+  name: news
+  nested:
+    depth: 5
+- create: true
+  fields:
+  - i18n: true
+    label: Title
+    name: title
+    widget: string
+  - default: true
+    i18n: true
+    label: Draft
+    name: draft
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Pinned
+    name: pinned
+    required: false
+    widget: boolean
+  - i18n: true
+    label: Date
+    name: date
+    picker_utc: true
+    widget: datetime
+  - i18n: true
+    label: Description
+    name: description
+    widget: text
+  - collapsed: true
+    field:
+      label: Image
+      name: image
+      widget: image
+    i18n: true
+    label: Images
+    minimize_collapsed: true
+    name: images
+    required: false
+    summary: '{{fields.image}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Alias
+      name: alias
+      widget: string
+    i18n: true
+    label: Aliases
+    minimize_collapsed: true
+    name: aliases
+    required: false
+    summary: '{{fields.alias}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Author
+      name: author
+      widget: string
+    i18n: true
+    label: Authors
+    minimize_collapsed: true
+    name: authors
+    required: false
+    summary: '{{fields.author}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Series
+      name: series
+      widget: string
+    i18n: true
+    label: Series
+    minimize_collapsed: true
+    name: series
+    required: false
+    summary: '{{fields.series}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Category
+      name: category
+      widget: string
+    i18n: true
+    label: Categories
+    minimize_collapsed: true
+    name: categories
+    required: false
+    summary: '{{fields.category}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Tag
+      name: tag
+      widget: string
+    i18n: true
+    label: Tags
+    minimize_collapsed: true
+    name: tags
+    required: false
+    summary: '{{fields.tag}}'
+    widget: list
+  - i18n: true
+    label: Body
+    name: body
+    widget: markdown
+  folder: content/blog
+  i18n: true
+  label: Blog
+  label_singular: Post
+  meta:
+    path:
+      index_file: index
+      label: Path
+      widget: string
+  name: blog
+  nested:
+    depth: 5
+  preview_path: /blog/{{year}}/{{month}}/{{title}}
+- create: true
+  fields:
+  - i18n: true
+    label: Title
+    name: title
+    widget: string
+  - i18n: true
+    label: Link Title
+    name: linkTitle
+    required: false
+    widget: string
+  - default: true
+    i18n: true
+    label: Draft
+    name: draft
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Pinned
+    name: pinned
+    required: false
+    widget: boolean
+  - i18n: true
+    label: Date
+    name: date
+    picker_utc: true
+    widget: datetime
+  - i18n: true
+    label: Description
+    name: description
+    widget: text
+  - collapsed: true
+    field:
+      label: Image
+      name: image
+      widget: image
+    i18n: true
+    label: Images
+    minimize_collapsed: true
+    name: images
+    required: false
+    summary: '{{fields.image}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Alias
+      name: alias
+      widget: string
+    i18n: true
+    label: Aliases
+    minimize_collapsed: true
+    name: aliases
+    required: false
+    summary: '{{fields.alias}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Author
+      name: author
+      widget: string
+    i18n: true
+    label: Authors
+    minimize_collapsed: true
+    name: authors
+    required: false
+    summary: '{{fields.author}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Series
+      name: series
+      widget: string
+    i18n: true
+    label: Series
+    minimize_collapsed: true
+    name: series
+    required: false
+    summary: '{{fields.series}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Category
+      name: category
+      widget: string
+    i18n: true
+    label: Categories
+    minimize_collapsed: true
+    name: categories
+    required: false
+    summary: '{{fields.category}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Tag
+      name: tag
+      widget: string
+    i18n: true
+    label: Tags
+    minimize_collapsed: true
+    name: tags
+    required: false
+    summary: '{{fields.tag}}'
+    widget: list
+  - i18n: true
+    label: Body
+    name: body
+    widget: markdown
+  - i18n: duplicate
+    label: Navigation Weight
+    name: nav_weight
+    widget: number
+  folder: content/docs
+  i18n: true
+  label: Documents
+  label_singular: Document
+  meta:
+    path:
+      index_file: index
+      label: Path
+      widget: string
+  name: documents
+  nested:
+    depth: 5
+- create: true
+  fields:
+  - i18n: true
+    label: Title
+    name: title
+    widget: string
+  - i18n: true
+    label: Link Title
+    name: linkTitle
+    required: false
+    widget: string
+  - default: true
+    i18n: true
+    label: Draft
+    name: draft
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - default: false
+    i18n: true
+    label: Pinned
+    name: pinned
+    required: false
+    widget: boolean
+  - i18n: true
+    label: Date
+    name: date
+    picker_utc: true
+    widget: datetime
+  - i18n: true
+    label: Description
+    name: description
+    widget: text
+  - collapsed: true
+    field:
+      label: Image
+      name: image
+      widget: image
+    i18n: true
+    label: Images
+    minimize_collapsed: true
+    name: images
+    required: false
+    summary: '{{fields.image}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Alias
+      name: alias
+      widget: string
+    i18n: true
+    label: Aliases
+    minimize_collapsed: true
+    name: aliases
+    required: false
+    summary: '{{fields.alias}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Author
+      name: author
+      widget: string
+    i18n: true
+    label: Authors
+    minimize_collapsed: true
+    name: authors
+    required: false
+    summary: '{{fields.author}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Series
+      name: series
+      widget: string
+    i18n: true
+    label: Series
+    minimize_collapsed: true
+    name: series
+    required: false
+    summary: '{{fields.series}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Category
+      name: category
+      widget: string
+    i18n: true
+    label: Categories
+    minimize_collapsed: true
+    name: categories
+    required: false
+    summary: '{{fields.category}}'
+    widget: list
+  - collapsed: true
+    field:
+      label: Tag
+      name: tag
+      widget: string
+    i18n: true
+    label: Tags
+    minimize_collapsed: true
+    name: tags
+    required: false
+    summary: '{{fields.tag}}'
+    widget: list
+  - i18n: true
+    label: Body
+    name: body
+    widget: markdown
+  - i18n: duplicate
+    label: Navigation Weight
+    name: nav_weight
+    widget: number
+  folder: content/modules
+  i18n: true
+  label: 模块
+  label_singular: 模块
+  meta:
+    path:
+      index_file: index
+      label: Path
+      widget: string
+  name: modules
+  nested:
+    depth: 5
+- create: true
+  fields:
+  - i18n: true
+    label: Title
+    name: title
+    widget: string
+  folder: content/archives
+  i18n: true
+  label: Archives
+  label_singular: Archive
+  meta:
+    path:
+      index_file: _index
+      label: Path
+      widget: string
+  name: archives
+  nested:
+    depth: 5
+  summary: '{{title}} {{dirname | ternary(''-'','''')}} {{dirname}}'
+- create: true
+  description: HB Framework showcases.
+  editor:
+    preview: false
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Domain
+    name: domain
+    widget: string
+  - date_format: YYYY-MM-DD
+    label: Date
+    name: date
+    time_format: false
+    widget: datetime
+  - default: false
+    label: Pinned
+    name: pinned
+    widget: hidden
+  - hint: Logo URL.
+    label: Logo
+    name: logo
+    required: false
+    widget: string
+  - hint: Logo intrinsic width, required when logo is set.
+    label: Logo width
+    name: logo_width
+    required: false
+    value_type: int
+    widget: number
+  - hint: Logo intrinsic height, required when logo is set.
+    label: Logo height
+    name: logo_height
+    required: false
+    value_type: int
+    widget: number
+  folder: data/sites
+  format: toml
+  identifier_field: name
+  label: 站点
+  label_singular: 站点
+  name: sites
+  slug: '{{fields.domain}}'
+  summary: '{{title}} - {{domain}}'
+i18n:
+  default_locale: zh-ch
+  locales:
+  - zh-ch
+  structure: multiple_files
+locale: zh-ch
+logo_url: /images/logo.png
+media_folder: static/images/uploads
+public_folder: /images/uploads
+publish_mode: editorial_workflow
+search: true
+site_url: ""
